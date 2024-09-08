@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quote Form</title>
+  <link rel="stylesheet" href="/app.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <nav class="navbar bg-body-tertiary bg-dark">
+    <form class="container-fluid justify-content-start">
+      <button class="btn btn-outline bg-primary me-2 mx-2" type="button"><i class="fa-solid fa-phone"> 9991423362</i></button>
+      <a href="/index/instantquote"><button class="btn btn-outline bg-primary me-2" type="button">Instant Quotes</button></a>
+    </form>
+  </nav>
+  <nav class="navbar" style="background-color: #e3f2fd">
+    <h1>Ultimate Clean Pros</h1>
+    <a href="#" class="btn btn-sm btn-outline-secondary" role="button"
+    >Home</a
+  >
+  <a href="#" class="btn btn-sm btn-outline-secondary" role="button"
+    >Window Cleaning</a
+  >
+  <a href="#" class="btn btn-sm btn-outline-secondary" role="button"
+    >Roof Cleaning</a
+  >
+  <a href="#" class="btn btn-sm btn-outline-secondary" role="button"
+    >House Washing</a
+  >
+  <a href="#" class="btn btn-sm btn-outline-secondary" role="button"
+    >Gutter Cleaning</a
+  >
+  <a href="#" class="btn btn-sm btn-outline-secondary" role="button"
+    >Commercial Cleaning</a
+  >
+  <a href="#" class="btn btn-sm btn-outline-secondary" role="button"
+    >Other Services</a
+  >
+  <a href="#" class="btn btn-sm btn-outline-secondary" role="button"
+    >Blog</a
+  >
+  </nav>
+  <div class="quote-form-container">
+    <h3 style="background-color: blue; color: aliceblue">Select the services that you are interested in:</h3>
+    <img style="width: 100px; height: 100px; float: right; margin-left: 20px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ95ihZe4Q9_T6R8Y3xH3TqOj9lJAVLXBRRxw&s" alt="Patio Cleaning">
+    <form action="/submit-services" method="POST">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="services" value="patio-cleaning" id="patio-cleaning">
+        <label class="form-check-label" for="patio-cleaning">Patio Cleaning</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="services" value="window-cleaning" id="window-cleaning">
+        <label class="form-check-label" for="window-cleaning">Window Cleaning</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="services" value="soft-wash-home" id="soft-wash-home">
+        <label class="form-check-label" for="soft-wash-home">Soft Wash Home</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="services" value="gutter-cleaning" id="gutter-cleaning">
+        <label class="form-check-label" for="gutter-cleaning">Gutter Cleaning</label>
+      </div>
+      <button type="submit" class="btn btn-primary" id="nextBtn">Next</button>
+    </form>
+  </div>
+  
+  <!-- Bootstrap and custom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

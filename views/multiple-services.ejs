@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/app.css" />
+    <title>Selected Services</title>
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary bg-dark">
+      <form class="container-fluid justify-content-start">
+        <button class="btn btn-outline bg-primary me-2 mx-2" type="button">
+          <i class="fa-solid fa-phone"></i> 9991423362
+        </button>
+        <a href="/index/instantquote">
+          <button class="btn btn-outline bg-primary me-2" type="button">
+            Instant Quotes
+          </button>
+        </a>
+      </form>
+    </nav>
+    <nav class="navbar" style="background-color: #e3f2fd">
+      <h1>Ultimate Clean Pros</h1>
+      <a href="#" class="btn btn-sm btn-outline-secondary" role="button">Home</a>
+      <a href="#" class="btn btn-sm btn-outline-secondary" role="button">Window Cleaning</a>
+      <a href="#" class="btn btn-sm btn-outline-secondary" role="button">Roof Cleaning</a>
+      <a href="#" class="btn btn-sm btn-outline-secondary" role="button">House Washing</a>
+      <a href="#" class="btn btn-sm btn-outline-secondary" role="button">Gutter Cleaning</a>
+      <a href="#" class="btn btn-sm btn-outline-secondary" role="button">Commercial Cleaning</a>
+      <a href="#" class="btn btn-sm btn-outline-secondary" role="button">Other Services</a>
+      <a href="#" class="btn btn-sm btn-outline-secondary" role="button">Blog</a>
+    </nav>
+
+    <div class="container my-5 quote-form-container">
+      <form action="/index/instantquote/general-info" method="get" class="needs-validation" novalidate>
+        <% if (services.includes('patio-cleaning')) { %>
+          <h3>Patio or Side Area Cleaning Step #1: Enter the area for cleaning:</h3>
+          <br>
+          <img
+            style="width: 100px; height: 100px; margin-right: 20px;"
+            src="https://tse1.mm.bing.net/th?id=OIG4.9J6iJlZozDknCbjK3sFM&w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn"
+            alt="Patio Cleaning"
+          />
+          <div class="form-group">
+            <label for="Patiolength">Approximate measurement of area:</label>
+            <input type="text" class="form-control" id="Patiolength" name="Patiolength" placeholder="Enter measurement in sq ft" required />
+            <div class="invalid-feedback">
+              Please enter the area.
+            </div>
+          </div> 
+          <br><hr><hr><hr><br>
+        <% } %>
+      
+        <% if (services.includes('window-cleaning')) { %>
+          <h3>Window Cleaning Step #1: How many windows do you have?</h3>
+          <br>
+          <img
+            style="width: 100px; height: 100px; margin-left: 20px;"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS56IZhI_D_5NEfIPh9my_Z_EALygnd_Ort6A&s"
+            alt="Window Cleaning"
+          />
+          <div class="col my-3">
+            <input
+              type="text"
+              class="form-control"
+              name="windowCount"
+              placeholder="No of windows"
+              required
+            />
+            <div class="invalid-feedback">Enter the number of windows please</div>
+          </div>
+          <br><hr><hr><hr><br>
+        <% } %>
+
+        <% if (services.includes('soft-wash-home')) { %>
+          <h3>Home Washing Step #1: What is the type of exterior of your home?</h3>
+          <br>
+          <img
+            style="width: 100px; height: 100px; margin-right: 20px;"
+            src="https://images.unsplash.com/photo-1503594384566-461fe158e797?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG91c2UlMjBleHRlcmlvcnxlbnwwfHwwfHx8MA%3D%3D"
+            alt="Home Exterior"
+          />
+          <div class="my-3">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="exteriorType"
+                value="vinyl-siding"
+                id="vinylSiding"
+                required
+              />
+              <label class="form-check-label" for="vinylSiding">Vinyl Siding</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="exteriorType"
+                value="wood-or-cedar"
+                id="woodOrCedar"
+                required
+              />
+              <label class="form-check-label" for="woodOrCedar">Wood or Cedar</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="exteriorType"
+                value="hardie-plank"
+                id="hardiePlank"
+                required
+              />
+              <label class="form-check-label" for="hardiePlank">Hardie Plank</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="exteriorType"
+                value="stucco"
+                id="stucco"
+                required
+              />
+              <label class="form-check-label" for="stucco">Stucco</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="exteriorType"
+                value="aluminium"
+                id="aluminium"
+                required
+              />
+              <label class="form-check-label" for="aluminium">Aluminium</label>
+            </div>
+          </div>
+          <br><hr><hr><hr><br>
+        <% } %>
+        
+        <% if (services.includes('gutter-cleaning')) { %>
+          <h3>Gutter Cleaning Step #1: Do your gutters have gutter guards?</h3>
+          <br>
+          <img
+            style="width: 100px; height: 100px; margin-right: 20px;"
+            src="https://tse4.mm.bing.net/th?id=OIG1.7ZMulHpQKyoi4V5O1haE&w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn"
+            alt="Gutter Cleaning"
+          />
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="GutterGuard"
+              id="flexRadioDefault1"
+              value="yes"
+              required
+            />
+            <label class="form-check-label" for="flexRadioDefault1">Yes</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="GutterGuard"
+              id="flexRadioDefault2"
+              value="no"
+              required
+            />
+            <label class="form-check-label" for="flexRadioDefault2">No</label>
+          </div>
+          <br><hr><hr><hr><br>
+        <% } %>
+
+       
+
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+  </body>
+</html>

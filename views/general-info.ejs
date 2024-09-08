@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="/app.css" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <title>Document</title>
+</head>
+<body>
+  <nav class="navbar bg-body-tertiary bg-dark">
+    <form class="container-fluid justify-content-start">
+      <button class="btn btn-outline bg-primary me-2 mx-2" type="button"><i class="fa-solid fa-phone"> 9991423362</i></button>
+      <a href="/index/instantquote"><button class="btn btn-outline bg-primary me-2" type="button">Instant Quotes</button></a>
+    </form>
+  </nav>
+  <nav class="navbar navbar-light" style="background-color: #e3f2fd">
+    <div class="container">
+      <h1 class="navbar-brand">Ultimate Clean Pros</h1>
+      <div>
+        <a href="#" class="btn btn-outline-secondary btn-sm">Home</a>
+        <a href="#" class="btn btn-outline-secondary btn-sm">Window Cleaning</a>
+        <a href="#" class="btn btn-outline-secondary btn-sm">Roof Cleaning</a>
+        <a href="#" class="btn btn-outline-secondary btn-sm">House Washing</a>
+        <a href="#" class="btn btn-outline-secondary btn-sm">Gutter Cleaning</a>
+        <a href="#" class="btn btn-outline-secondary btn-sm">Commercial Cleaning</a>
+        <a href="#" class="btn btn-outline-secondary btn-sm">Other Services</a>
+        <a href="#" class="btn btn-outline-secondary btn-sm">Blog</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5 quote-form-container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <h2>General Information :</h2>
+        <form method="post" action="/index/instantquote/service-details/personal-details" class="row g-3 needs-validation" novalidate>
+          <div class="col-md-12">
+            <label for="sourceSelect" class="form-label">How did you hear about us?</label>
+            <select class="form-select" id="sourceSelect" aria-label="Select source" required>
+              <option selected disabled value="">Open this select menu</option>
+              <option value="1">Facebook</option>
+              <option value="2">Instagram</option>
+              <option value="3">Google</option>
+              <option value="4">Google Ads</option>
+              <option value="5">Podcasts</option>
+            </select>
+            <div class="invalid-feedback">Please select a valid source.</div>
+          </div>
+
+          <div class="house-size">
+            <h4 class="mb-3">Select the house size:</h4>
+            <br>
+            <img style="width: 100px; height: 100px; margin-left: 20px;"
+        src="https://www.shutterstock.com/image-vector/house-sizes-flat-cute-color-260nw-315028184.jpg"
+        alt="img">
+        <br>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="homeSize" value="medium-house" id="mediumHouse" />
+              <label class="form-check-label" for="mediumHouse">Medium House</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="homeSize" value="large-house" id="largeHouse" />
+              <label class="form-check-label" for="largeHouse">Large House</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="homeSize" value="xl-house" id="xlHouse" />
+              <label class="form-check-label" for="xlHouse">XL House</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="homeSize" value="xxl-house" id="xxlHouse" />
+              <label class="form-check-label" for="xxlHouse">XXL House</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="homeSize" value="small-house" id="smallHouse" />
+              <label class="form-check-label" for="smallHouse">Small House</label>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Next</button>
+          </div>
+          
+     
+            
+        
+        
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

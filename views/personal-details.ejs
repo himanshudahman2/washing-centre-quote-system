@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/app.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary bg-dark">
+      <form class="container-fluid justify-content-start">
+        <button class="btn btn-outline bg-primary me-2 mx-2" type="button">
+          <i class="fa-solid fa-phone"> 9991423362</i>
+        </button>
+        <a href="/index/instantquote"
+          ><button class="btn btn-outline bg-primary me-2" type="button">
+            Instant Quotes
+          </button></a
+        >
+      </form>
+    </nav>
+    <nav class="navbar" style="background-color: #e3f2fd">
+      <h1>Ultimate clean pros</h1>
+      <a href="#" class="btn btn-sm btn-outline-secondary" role="button"
+        >Home</a
+      >
+      <a href="#" class="btn btn-sm btn-outline-secondary" role="button"
+        >Window Cleaning</a
+      >
+      <a href="#" class="btn btn-sm btn-outline-secondary" role="button"
+        >Roof Cleaning</a
+      >
+      <a href="#" class="btn btn-sm btn-outline-secondary" role="button"
+        >House Washing</a
+      >
+      <a href="#" class="btn btn-sm btn-outline-secondary" role="button"
+        >Gutter Cleaning</a
+      >
+      <a href="#" class="btn btn-sm btn-outline-secondary" role="button"
+        >Commercial Cleaning</a
+      >
+      <a href="#" class="btn btn-sm btn-outline-secondary" role="button"
+        >Other Services</a
+      >
+      <a href="#" class="btn btn-sm btn-outline-secondary" role="button"
+        >Blog</a
+      >
+    </nav>
+    <div class="container my-5 quote-form-container">
+      <img
+      style="width: 100px; height: 100px; margin-left: 450px;"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjs923d5AJf40IIfwSFp7ANnHT6fA1RBId1g&s"
+      alt="Home Exterior"
+    />
+    <br>
+        <h3>Add personal Details :</h3>
+        <br>
+        <form action="/index/instantquote/service-details/personal-details/Additional-notes" method="post" class="needs-validation" novalidate>
+          <div class="form-row">
+            <div class="col">
+              <input type="text" class="form-control" name="firstName" placeholder="First name" required />
+              <div class="invalid-feedback">
+                Please enter your first name.
+              </div>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" name="lastName" placeholder="Last name" required />
+              <div class="invalid-feedback">
+                Please enter your last name.
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="form-row">
+            <div class="col">
+              <input type="text" class="form-control" name="countryName" placeholder="Country Name" required />
+              <div class="invalid-feedback">
+                Please enter your country name.
+              </div>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" name="cityAddress" placeholder="City Address" required />
+              <div class="invalid-feedback">
+                Please enter your city address.
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="form-row">
+            <div class="col">
+              <input type="text" class="form-control" name="zipCode" placeholder="Zip code" required />
+              <div class="invalid-feedback">
+                Please enter your zip code.
+              </div>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" name="companyName" placeholder="Company name (optional)" />
+            </div>
+          </div>
+          <br />
+          <div class="form-row">
+            <div class="col-6">
+              <input type="tel" class="form-control" name="phoneNumber" placeholder="Phone Number" required />
+              <div class="invalid-feedback">
+                Please enter a valid 10-digit phone number.
+              </div>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="agreedToMessages" value="yes" id="flexCheckIndeterminate" required />
+              <label class="form-check-label" for="flexCheckIndeterminate">
+                I agree to receive messages regarding exterior cleaning for my home or business.
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="form-row">
+            <div class="col">
+              <input type="tel" class="form-control" name="alternatePhone" placeholder="Alternate phone" pattern="^\d{10}$">
+              <div class="invalid-feedback">
+                Please enter a valid 10-digit alternate phone number.
+              </div>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" name="emailAddress" placeholder="Email Address" required>
+              <div class="invalid-feedback">
+                Please enter a valid email address.
+              </div>
+            </div>
+          </div>
+          <br />
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      
+
+    <script>
+     (() => {
+    'use strict'
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+  
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url('https://i.pinimg.com/564x/30/8f/69/308f69a32f34aadcbecc0e40cddd1344.jpg');
+   
+    align-items: center;
+}
+
+h1{
+    color: rgb(13, 9, 86);
+}
+
+.main{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.main h1{
+    font-size: 70px;  
+    color: rgb(255, 255, 255);
+
+}
+
+.main h4{
+    color: rgb(255, 255, 255);
+}
+
+
+.main-content-btn{
+    background-color: white !important; 
+    font-size:x-large;   
+    margin: 20px;
+}
+
+.about{
+    text-align: center;
+    
+}
+
+.about h3,h5{
+    background-color: rgba(17, 73, 125, 0.862);
+    color: white;
+    
+}
+
+.about button{
+    background-color: white !important; 
+}
+body, h3 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.quote-form-container{
+    background-color: aliceblue;
+    padding: 50px !important;
+    width: 50%;
+    height: 50%;
+    margin-left:400px;
+    margin-top: 100px;
+    border: 2px solid black ;
+    border-radius: 1%;
+}
+
+
+.general-info{
+    height: 200px;
+}
+
+
+select{
+    background-color: white !important;
+    border: 2px solid black;
+    border-radius: 3px;
+
+}
+
+.house-size{
+    margin-top: 20px;
+}
+
+.btn button{
+    margin-top: 160px;
+    margin-left: 140px;
+
+}
+
+.card:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card-container{
+    display: flex;
+   justify-content: center;
+}
+
+.card{
+    margin: 30px;
+}
+
+
+.content-image-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px; /* Adjust space between content and image */
+    padding: 20px; /* Optional padding for better spacing */
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  .image {
+    flex: 1;
+    text-align: right; /* Align image to the right */
+  }
+  
+  .image img {
+    max-width: 80%; /* Ensure image scales properly */
+    height: auto; /* Maintain aspect ratio */
+    width: 80%; /* Ensure the image takes up the full width of its container */
+  }
+  
+  .card-body{
+    font-family: italic;
+    font-size: larger;
+    background-color: rgb(205, 205, 205);
+  }

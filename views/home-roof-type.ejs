@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="/app.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary bg-dark">
+        <form class="container-fluid justify-content-start">
+          <button class="btn btn-outline  bg-primary me-2 mx-2  " type="button"><i class="fa-solid fa-phone"> 9991423362</i></button>
+          <a href="/index/instantquote"><button class="btn btn-outline bg-primary me-2" type="button">Instant Quotes</button></a>
+        </form>
+      </nav>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd">
+      <div class="container">
+        <h1 class="navbar-brand">Ultimate Clean Pros</h1>
+        <div>
+          <a href="#" class="btn btn-outline-secondary btn-sm">Home</a>
+          <a href="#" class="btn btn-outline-secondary btn-sm"
+            >Window Cleaning</a
+          >
+          <a href="#" class="btn btn-outline-secondary btn-sm">Roof Cleaning</a>
+          <a href="#" class="btn btn-outline-secondary btn-sm">House Washing</a>
+          <a href="#" class="btn btn-outline-secondary btn-sm"
+            >Gutter Cleaning</a
+          >
+          <a href="#" class="btn btn-outline-secondary btn-sm"
+            >Commercial Cleaning</a
+          >
+          <a href="#" class="btn btn-outline-secondary btn-sm"
+            >Other Services</a
+          >
+          <a href="#" class="btn btn-outline-secondary btn-sm">Blog</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5 quote-form-container">
+      <h3>Home Washing Step #1: What is the type of exterior of your home?</h3>
+      <img
+  style="width: 100px; height: 100px; margin-right: 20px;"
+  src="https://images.unsplash.com/photo-1503594384566-461fe158e797?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG91c2UlMjBleHRlcmlvcnxlbnwwfHwwfHx8MA%3D%3D"
+  alt="Home Exterior"
+/>
+       
+               <form action="/index/instantquote/general-info"  method="get">
+
+            <div class="my-3">
+              <h5>Type of Home Exterior:</h5>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="exteriorType"
+                  value="vinyl-siding"
+                  id="vinylSiding"
+                  required
+                />
+                <label class="form-check-label" for="vinylSiding">
+                  Vinyl Siding
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="exteriorType"
+                  value="wood-or-cedar"
+                  id="woodOrCedar"
+                  required
+                />
+                <label class="form-check-label" for="woodOrCedar">
+                  Wood or Cedar
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="exteriorType"
+                  value="hardie-plank"
+                  id="hardiePlank"
+                  required
+                />
+                <label class="form-check-label" for="hardiePlank">
+                  Hardie Plank
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="exteriorType"
+                  value="stucco"
+                  id="stucco"
+                  required
+                />
+                <label class="form-check-label" for="stucco">
+                  Stucco
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="exteriorType"
+                  value="aluminium"
+                  id="aluminium"
+                  required
+                />
+                <label class="form-check-label" for="aluminium">
+                  Aluminium
+                </label>
+              </div>
+            </div>
+          
+            <button type="submit" class="btn btn-primary mt-3 next-button">
+              Next
+            </button>
+          </form>
+          
+    </div>
+</body>
+</html>
