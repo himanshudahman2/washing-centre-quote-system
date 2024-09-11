@@ -48,7 +48,6 @@ app.get("/index/instantquote", (req, res) => {
   res.render("instantquote");
 });
 
-// Submit services route
 app.post("/submit-services", (req, res) => {
   const selectedServices = req.body.services;
   req.session.services = selectedServices;
@@ -61,22 +60,20 @@ app.post("/submit-services", (req, res) => {
   if (Array.isArray(selectedServices) && selectedServices.length > 1) {
     res.render("multiple-services.ejs", { services: selectedServices });
   } else {
-    const selectedService = Array.isArray(selectedServices)
-      ? selectedServices[0]
-      : selectedServices;
-    if (selectedService === "patio-cleaning") {
+    if (selectedServices === "patio-cleaning") {
       res.render("patio-cleaning.ejs");
-    } else if (selectedService === "window-cleaning") {
+    } else if (selectedServices === "window-cleaning") {
       res.render("window.ejs");
-    } else if (selectedService === "soft-wash-home") {
+    } else if (selectedServices === "soft-wash-home") {
       res.render("home-roof-type.ejs");
-    } else if (selectedService === "gutter-cleaning") {
+    } else if (selectedServices === "gutter-cleaning") {
       res.render("gutter.ejs");
     } else {
       res.redirect("/");
     }
   }
 });
+
 
 // Service details route
 app.get("/index/instantquote/general-info", (req, res) => {
@@ -85,16 +82,16 @@ app.get("/index/instantquote/general-info", (req, res) => {
   req.session.exteriorType = req.query.exteriorType;
   console.log(` exterior type is  ${req.session.exteriorType}`);
 
-  console.log("Patio Length Saved:", req.session.patioLength); // Verify the patio length is saved correctly
+  console.log("Patio Length Saved:", req.session.patioLength); 
   res.render("general-info.ejs");
 });
 
 // Personal details route
 app.post("/index/instantquote/service-details/personal-details", (req, res) => {
   req.session.homeSize = req.body.homeSize;
-  console.log("Home Size Saved:", req.session.homeSize); // Verify home size is saved
+  console.log("Home Size Saved:", req.session.homeSize); 
   res.render("personal-details.ejs");
-});
+});   
 
 // Additional notes route
 app.post(
